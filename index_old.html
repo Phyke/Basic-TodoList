@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style_old.css">
+    <!-- 
+        this old file does not include bootstrap
+        and some html elements structure is not the same as the new one
+        so some function from index.js won't work properly
+     -->
+</head>
+<body>
+    <dialog id="addDialog">
+        <table>
+            <tr>
+                <td><label for="nameInput">Item Name</label></td>
+                <td><input type="text" name="nameInput"></td>
+            </tr>
+            <tr>
+                <td><label for="dueInput">Due date</label></td>
+                <td><input type="date" name="dueInput"></td>
+            </tr>
+        </table>
+        <div class="center">
+            <button id="confirmButton">Confirm</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+        
+    </dialog>
+    <div class="container">
+        <header>
+            Todo List
+        </header>
+        <main>
+            <table id="item-container">
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Due date</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <button id="addButton">Add a new item</button>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
